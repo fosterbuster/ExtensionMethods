@@ -16,7 +16,7 @@ namespace FosterBuster.Extensions
         /// Gets an integer representation of a manufacturer code string.
         /// </summary>
         /// <param name="manId">the manufacturer code string.</param>
-        /// <returns>integer representation of <paramref name="manId"/></returns>
+        /// <returns>integer representation of <paramref name="manId"/>.</returns>
         public static int ToManufacturerCode(this string manId)
         {
             if (manId.Length != 3)
@@ -38,7 +38,7 @@ namespace FosterBuster.Extensions
                new[]
                {
                     (char)((manId / 1024) + 64),
-                    (char)((manId % 1024 / 32) + 64),
+                    (char)(((manId % 1024) / 32) + 64),
                     (char)((manId % 32) + 64),
                });
         }
@@ -62,6 +62,5 @@ namespace FosterBuster.Extensions
         {
             return b.Mask(0b1000_0000) == 0b1000_0000;
         }
-
     }
 }
