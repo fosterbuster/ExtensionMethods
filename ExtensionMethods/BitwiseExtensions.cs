@@ -45,6 +45,17 @@ namespace FosterBuster.Extensions
         }
 
         /// <summary>
+        /// Sets the bit at the <paramref name="position"/>.
+        /// </summary>
+        /// <param name="b">the byte to manipulate.</param>
+        /// <param name="position">the postion.</param>
+        /// <returns>the same byte, but different.</returns>
+        public static byte SetBit(this byte b, int position)
+        {
+            return (byte)(b | (1 << position));
+        }
+
+        /// <summary>
         /// Transforms a hex-formatted string to a byte array.
         /// </summary>
         /// <param name="hexString">the string.</param>

@@ -4,10 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>FosterBuster.Extensions</RootNamespace>
     <Authors>Poul Erik Venø Hansen</Authors>
-    <PackageId>ExtensionMethods_fosterbuster</PackageId>
+    <PackageId>FosterBuster.Extensions</PackageId>
     <Title>Misc. extension methods</Title>
     <Description>A collection of misc. extension methods.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/fosterbuster/ExtensionMethods</PackageProjectUrl>
     <RepositoryUrl>https://github.com/fosterbuster/ExtensionMethods</RepositoryUrl>
