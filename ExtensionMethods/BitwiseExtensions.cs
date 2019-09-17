@@ -28,7 +28,7 @@ namespace FosterBuster.Extensions
         /// </summary>
         /// <param name="b">the byte.</param>
         /// <returns>the low nibble.</returns>
-        public static int GetLowNibble(this byte b)
+        public static byte GetLowNibble(this byte b)
         {
             return b.Mask(0b0000_1111);
         }
